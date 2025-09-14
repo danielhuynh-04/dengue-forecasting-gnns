@@ -7,12 +7,13 @@ Giới thiệu
 
 Đồ án này tập trung vào việc dự báo số ca mắc sốt xuất huyết tại Brazil dựa trên dữ liệu dịch tễ, khí hậu, dân số và liên kết không gian. Phương pháp chính được áp dụng là Graph Neural Networks (GNNs), đặc biệt là Graph Attention Networks (GAT), nhằm khai thác cả yếu tố không gian và thời gian trong dữ liệu.
 
-Dataset được sử dụng từ Mosqlimate.org và các nguồn mở chính thức từ Brazil khác, bao gồm:
+Dataset được sử dụng từ Mosqlimate và các nguồn mở chính thức từ Brazil khác, bao gồm:
 Dữ liệu dịch tễ (sốt xuất huyết theo tuần)
 Dữ liệu khí hậu (nhiệt độ, mưa, độ ẩm,…)
 Dữ liệu dân số (IBGE)
 Bản đồ hành chính Brazil (GeoJSON)
 Dữ liệu kết nối không gian (REGIC 2018) + bản đồ Brazil geojs-100-mun
+vì lí do bảo mật nên không công khai data và data visual
 
 Pipeline dự án
 Giai đoạn 1. Xử lý dữ liệu
