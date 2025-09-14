@@ -6,7 +6,7 @@ Dengue Forecasting with Graph Neural Networks (GNNs)
 Giới thiệu
 
 Đồ án này tập trung vào việc dự báo số ca mắc sốt xuất huyết tại Brazil dựa trên dữ liệu dịch tễ, khí hậu, dân số và liên kết không gian. Phương pháp chính được áp dụng là Graph Neural Networks (GNNs), đặc biệt là Graph Attention Networks (GAT), nhằm khai thác cả yếu tố không gian và thời gian trong dữ liệu.
-
+tải dashboard_chinhthuc về để xem kết  quả cuối cùng
 Dataset được sử dụng từ Mosqlimate và các nguồn mở chính thức từ Brazil khác, bao gồm:
 Dữ liệu dịch tễ (sốt xuất huyết theo tuần)
 Dữ liệu khí hậu (nhiệt độ, mưa, độ ẩm,…)
