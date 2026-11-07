@@ -1,10 +1,14 @@
 # run_global_gat.py
-# ------------------------------------------------------------
-# Global GAT theo tuần (CPU), HuberLoss, early stopping,
-# metric đầy đủ (log/real, R2 trim), AUC/PR từ hồi quy.
-# Bias-correction: Duan smearing (ưu tiên) + fallback sigma^2.
-# Thêm clamp theo phân vị cao của TRAIN để giảm outlier ở miền thực.
-# ------------------------------------------------------------
+# ==============================================================================
+# End-to-End Training & Evaluation Orchestrator for Nationwide ST-GAT
+# - Chronological Split: Train (2010–2020) | Val (2021–2022) | Test (2023–2024)
+# - Loss & Optimizer   : HuberLoss(delta=1.2), AdamW(lr=3e-4, weight_decay=1e-4),
+#                        Gradient Clipping (max_norm=1.0), Early Stopping (patience=30)
+# - Bias Correction    : Duan's Smearing Estimator (S = E[exp(eps)] = 1.128)
+#                        with log-normal sigma² fallback + 99.9th-percentile clamp (cap=528)
+# - Outputs            : checkpoints/gat_global_best.pt, gat_global_weekly_report.csv,
+#                        data/interim/gat_global_summary.json, visualizations/data/node_predictions.csv
+# ==============================================================================
 from __future__ import annotations
 import os, glob, time, json, random
 from typing import List, Tuple, Dict

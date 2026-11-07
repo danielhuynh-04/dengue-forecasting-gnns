@@ -1,0 +1,35 @@
+MIT License
+
+Copyright (c) 2025-2026 Huynh Le Thanh Hai
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software, benchmark configuration, derived graph artifacts, and
+associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+DATA PROVENANCE & ATTRIBUTION NOTICE
+-------------------------------------------------------------------------------
+Primary epidemiological, climatic, and demographic source records bundled in
+`data/raw/` originate from open public-health and earth-observation repositories
+aggregated via the Infodengue-Mosqlimate Dengue Challenge (Zenodo DOI:
+10.5281/zenodo.13328231, CC BY 4.0):
+  - SINAN / DATASUS (Brazilian Ministry of Health)
+  - ECMWF ERA5 Reanalysis
+  - IBGE (Instituto Brasileiro de Geografia e Estatistica & REGIC 2018)
+Please retain attribution to these primary providers in academic publications.
+

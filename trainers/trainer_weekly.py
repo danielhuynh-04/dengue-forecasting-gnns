@@ -1,7 +1,10 @@
 # trainers/trainer_weekly.py
-# ------------------------------------------------------------
-# Dựng chuỗi thời gian từ *_lagK và tạo model TemporalGAT.
-# ------------------------------------------------------------
+# ==============================================================================
+# Temporal Sequence Builder & Model Factory for ST-GAT (`TemporalGAT`)
+# - Extracts ordered historical lag features (*_lag1..*_lagK) into [N, T, 1] tensors
+# - Initializes TemporalGAT with 128 hidden units, (4, 4) attention heads,
+#   and 64-dim GRU + 4-head temporal self-attention encoder.
+# ==============================================================================
 from __future__ import annotations
 import torch
 from typing import List, Tuple

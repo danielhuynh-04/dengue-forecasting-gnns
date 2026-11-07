@@ -1,7 +1,17 @@
 # models/temporal_gat.py
-# ------------------------------------------------------------
-# Temporal-GAT gọn nhẹ cho CPU: GRU + MultiheadAttn -> 2x GAT -> Linear(1)
-# ------------------------------------------------------------
+# ==============================================================================
+# Spatio-Temporal Graph Attention Network (ST-GAT / TemporalGAT)
+# Capstone Thesis (9.5/10, Top of Cohort) — Huynh Le Thanh Hai (ID: 2251012054)
+# Ho Chi Minh City Open University · Supervisor: Dr. Le Quang Minh
+#
+# Architecture Overview:
+#   1. TemporalEncoder: GRU (hid_dim=64) + 4-Head MultiheadAttention + Residual
+#      skip connection over lagged epidemiological time series [N, T, F_t].
+#   2. Spatial Graph Attention:
+#      - GATConv Layer 1: in_dim + t_hidden -> 128 × 4 heads (concat=True, ELU)
+#      - GATConv Layer 2: 512 -> 128 × 4 heads (concat=False, ELU)
+#      - Linear Readout : 128 -> 1 (predicts log1p weekly dengue incidence)
+# ==============================================================================
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

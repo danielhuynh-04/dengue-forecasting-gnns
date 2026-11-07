@@ -1,8 +1,9 @@
 # evaluation/metrics.py
-# ------------------------------------------------------------
-# Metric robust cho hồi quy + phân loại (từ hồi quy).
-# Giữ nguyên so với bản tốt gần nhất.
-# ------------------------------------------------------------
+# ==============================================================================
+# Dual-Domain Evaluation Suite (Log-Space, Real-Case Space & Outbreak Alerting)
+# - Regression Metrics: MAE, RMSE, SMAPE, Robust R², and 1% Trimmed R² (outlier-resistant)
+# - Outbreak Early-Warning Classification: ROC-AUC & PR-AUC at 90th-percentile threshold
+# ==============================================================================
 from __future__ import annotations
 import numpy as np
 
